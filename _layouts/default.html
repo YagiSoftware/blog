@@ -26,7 +26,7 @@
       <div class="gradient"></div>
       <div class="inner">
         <a href="/"><h1> {{ site.name }} </h1></a>
-        <h2>We focus on the technical stuff, so you can focus on your business</h2>
+        <!-- <h2>We focus on the technical stuff, so you can focus on your business</h2> -->
         <br>
         <div style="display: flex; justify-content: space-between;">
           <a class="nav-link" href="/">Articles</a>
@@ -43,7 +43,7 @@
 
         </section>
 
-        {% if page.id != 'index' %}
+        {% if page.id != 'index' and page.id !='about' %}
         <section style="font-family: 'freight-sans-pro', 'Helvetica Neue', Helvetica, Arial, serif; margin-top: 5rem;">
           <div id="disqus_thread"></div>
           <script>
