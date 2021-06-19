@@ -2,6 +2,7 @@
 layout: post
 title: Practice theme development without using a real store
 date: 2021-06-20 00:09 +0800
+image: https://mugshotbot.com/m/LXwQvHSQ
 ---
 
 
