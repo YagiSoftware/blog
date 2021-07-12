@@ -1,13 +1,14 @@
 # Setup
 name:         Yagi Software
-tagline:      A responsive theme for your project on GitHub Pages
+tagline:      Baaaa
 baseurl:      ""
 locale:       "en"
 permalink: /articles/:title:output_ext
 
 # Gems
-gems:
+plugins:
   - jekyll-paginate
+  - jekyll-sitemap
 
 #Others
 markdown: kramdown
