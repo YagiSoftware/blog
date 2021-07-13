@@ -38,7 +38,31 @@ Click save, then you can view this text in the order status page. You can select
 Say, you have different delayed shipping date for different order, how do you show them on the order status page instead of a fixed text message?
 
 
-```
+To assign different message to different order, we can make use of the [metafields](https://www.shopify.my/partners/blog/110057030-using-metafields-in-your-shopify-theme) feature of Shopify, metafields are extra pieces of data that you can attach to products, customers, orders, and other objects in your Shopify store.
+
+Currently Shopify doesn't have an official way to edit metafields for products, you would have to download third party apps to be able to edit metafields. I recommend using [Metafields Custom Field Master](https://apps.shopify.com/metafields-manager-by-hulkapps?) app to edit metafields, as they have a generous free plan that lets you add metafields to unlimited products, I will be using this app for the following steps.
+
+
+
+After installing the Metafields app, open it :
+![open metafields app](https://yagisoftware.s3.amazonaws.com/2-how-to-hide-products-from-search-in-shopify-store/mt1.png)
+
+
+
+Then select "**Order**", and select the order you want to add custom message to.
+
+You can set the **Namespace** and **Key** to any value you want, but make sure that they are the same for all the orders which you want to display message on the order status page. We will use the Namespace and Key value later. I have set the Namespace to **delay** and Key to **message**.
+
+Set the **Type** to **String**, then type the message you want to display at the bottom text box, and click save.
+
+![metafields namespace key value](https://yagisoftware.s3.amazonaws.com/3-how-to-show-text-message-in-order-status-page/metafield_value.png)
+
+
+Now go back to the Settings > Checkout > Additional script field, and replace the code with below : 
+
+
+{% raw %}
+```html
 <script>
   {% if order.metafields.delay.message != blank %}
     Shopify.Checkout.OrderStatus.addContentBox(
@@ -49,3 +73,9 @@ Say, you have different delayed shipping date for different order, how do you sh
 </script>
 
 ```
+{% endraw %}
+
+This code will show the message on order status page only if we have set the metafields for it (Namespace 'delay' and Key 'message'), you can change the 'delay' and 'message' in the code above to the values you have set in the Namespace and Key earlier.
+
+
+<script async data-uid="3f46096ca1" src="https://yagisoft.ck.page/3f46096ca1/index.js"></script>

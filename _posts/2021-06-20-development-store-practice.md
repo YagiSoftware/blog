@@ -24,4 +24,4 @@ After getting approved, you can log in to your partner account, and select **Sto
 
 And now you should have a development store which you can do theme customization on it. Once you are happy with the theme, you can export the theme, and import it on the real production store.
 
-<script async data-uid="3f46096ca1" src="https://chipper-builder-5202.ck.page/3f46096ca1/index.js"></script>
+<script async data-uid="3f46096ca1" src="https://yagisoft.ck.page/3f46096ca1/index.js"></script>
