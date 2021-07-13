@@ -33,6 +33,7 @@ Click save, then you can view this text in the order status page. You can select
 
 ![order status page message](https://yagisoftware.s3.amazonaws.com/3-how-to-show-text-message-in-order-status-page/message.png)
 
+[Official Shopify documentation on the addContentBox function](https://help.shopify.com/en/manual/orders/status-tracking/customize-order-status/order-status-javascript-asset)
 
 ## Show different message on different order
 Say, you have different delayed shipping date for different order, how do you show them on the order status page instead of a fixed text message?
