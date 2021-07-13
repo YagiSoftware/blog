@@ -2,7 +2,7 @@
 layout: post
 title: How to show text message in order status (thank you) page
 date: 2021-07-13 20:31 +0800
-image: https://mugshotbot.com/m/AKOkh1ZJ
+image: https://mugshotbot.com/m/lQh9xE8i
 ---
 
 If your product got backordered or got shipment delayed, displaying the delayed delivery date on the order status (thank you / tracking) page could be a good way to inform customer.
@@ -30,6 +30,12 @@ Then paste in the following code into the **Additional scripts** field :
 
 Click save, then you can view this text in the order status page. You can select an order in the admin, then select "More actions" > "View order status page" to view the order status page.
 ![view order status page](https://yagisoftware.s3.amazonaws.com/3-how-to-show-text-message-in-order-status-page/view_order_status.png)
+
+![order status page message](https://yagisoftware.s3.amazonaws.com/3-how-to-show-text-message-in-order-status-page/message.png)
+
+
+## Show different message on different order
+Say, you have different delayed shipping date for different order, how do you show them on the order status page instead of a fixed text message?
 
 
 ```
