@@ -888,7 +888,7 @@ header .gradient {
 }
 
 #post-content code, #post-contentpre {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 1rem;
   color: #222;
@@ -901,7 +901,7 @@ header .gradient {
 }
 
 #post-content pre {
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   overflow: auto;
   text-shadow: none;
   background: #fff;
@@ -909,10 +909,14 @@ header .gradient {
 }
 
 #post-content pre code {
-  padding: 0;
+  /*padding: 0;*/
   color: #2879d0;
   background-color: #fff;
   border: none;
+}
+
+#post-content .highlighter-rouge {
+  margin-bottom: 2rem;
 }
 
 #post-content form{
