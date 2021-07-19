@@ -2,7 +2,7 @@
 layout: post
 title: How to customize sorting options on collection page
 date: 2021-07-19 16:08 +0800
-
+image: https://mugshotbot.com/m/UAXj52qf
 ---
 
 On most theme, the default sorting option on the collection / catalog page is "Alphabetically, A-Z", which products will be sorted from A to Z.
