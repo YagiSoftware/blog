@@ -325,6 +325,10 @@ ul {
   padding: 0;
 }
 
+ol {
+  list-style: decimal;
+  margin-left: 2rem;
+}
 /**
  * Tailwind custom reset styles
  */
@@ -939,6 +943,10 @@ footer {
 
 #post-content p {
   margin-bottom: 2.5rem;
+}
+
+#post-content li p {
+  margin-bottom: 0.25rem;
 }
 
 #post-content h1 {

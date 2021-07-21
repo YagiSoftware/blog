@@ -73,7 +73,22 @@ We then proceed to add some code (the if and endif part) below it :
 
 The code above will make the sorting option to become "Best selling", if it is the catalog / product page.
 
-You can change it to options list below :
+You can change it to options listed below : (the 'best-selling' part shown above)
 
+1. manual
+
+2. best-selling
+
+3. title-ascending
+
+4. title-descending
+
+5. price-ascending
+
+6. price-descending
+
+7. created-ascending
+
+8. created-descending
 
 WIP 🚧
