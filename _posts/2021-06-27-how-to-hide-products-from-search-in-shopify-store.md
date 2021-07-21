@@ -33,19 +33,19 @@ Currently Shopify doesn't have an official way to edit metafields for products, 
 
 
 After installing the Metafields app, open it :
-![open metafields app](https://yagisoftware.s3.amazonaws.com/2-how-to-hide-products-from-search-in-shopify-store/mt1.png)
+![open metafields app](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/mt1.png)
 
 
 
 Then select "Product":
 
-![metafields product](https://yagisoftware.s3.amazonaws.com/2-how-to-hide-products-from-search-in-shopify-store/mt2.png)
+![metafields product](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/mt2.png)
 
 
 
 Select the product you want to hide from search : 
 
-![select product to hide from search](https://yagisoftware.s3.amazonaws.com/2-how-to-hide-products-from-search-in-shopify-store/mt3.png)
+![select product to hide from search](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/mt3.png)
 
 
 
@@ -64,7 +64,7 @@ Integer: **1**
 
 Then click "Save".
 
-![fill in metafields](https://yagisoftware.s3.amazonaws.com/2-how-to-hide-products-from-search-in-shopify-store/mt4.png)
+![fill in metafields](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/mt4.png)
 
 
 
@@ -86,18 +86,18 @@ To override the default behavior of showing all products on the "Catalog" page, 
 
 Create a collection, and name the title as "**All**".
 
-![collection create](https://yagisoftware.s3.amazonaws.com/2-how-to-hide-products-from-search-in-shopify-store/collection1.png)
+![collection create](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/collection1.png)
 
 
 Set the collection to "**Manual**", then click "**Save**"
 
-![collection manual](https://yagisoftware.s3.amazonaws.com/2-how-to-hide-products-from-search-in-shopify-store/collection2.png)
+![collection manual](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/collection2.png)
 
 
 
 Then next, select all products and add them to the "**All**" collection, and then select the product you want to hide from the catalog, and click "Remove from collection", and select the "**All**" collection.
 
-![collection all hide](https://yagisoftware.s3.amazonaws.com/2-how-to-hide-products-from-search-in-shopify-store/collection3.png)
+![collection all hide](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/collection3.png)
 
 
 

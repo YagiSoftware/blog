@@ -21,7 +21,7 @@ This post will go over on how to set the default selected sorting option, and ho
 
 If you have created collection, you can go to the collection and change the sorting option like this :
 
-![sort option](https://yagisoftware.s3.amazonaws.com/4-how-to-customize-sorting-options-on-collection-page/collection2.png)
+![sort option](https://img.yagisoftware.com/4-how-to-customize-sorting-options-on-collection-page/collection2.png)
 
 ## How to change default sorting option on catalog / products page without coding
 
@@ -29,15 +29,15 @@ By default, all Shopify stores have a “Catalog” page which show all availabl
 
 You can override the default sorting option by creating a new collection and name its title as "**All**", and change the sorting option to the one you want.
 
-![create collection](https://yagisoftware.s3.amazonaws.com/2-how-to-hide-products-from-search-in-shopify-store/collection1.png)
+![create collection](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/collection1.png)
 
-![collection all](https://yagisoftware.s3.amazonaws.com/4-how-to-customize-sorting-options-on-collection-page/collectionAll.png)
+![collection all](https://img.yagisoftware.com/4-how-to-customize-sorting-options-on-collection-page/collectionAll.png)
 
 And use "Automated" Collection type, and use conditions of "Product price" is greater than 0, this will automatically match almost all your product in the store. 
 
-![automated collection using price](https://yagisoftware.s3.amazonaws.com/4-how-to-customize-sorting-options-on-collection-page/collectionAllPrice.png)
+![automated collection using price](https://img.yagisoftware.com/4-how-to-customize-sorting-options-on-collection-page/collectionAllPrice.png)
 
-![sort option](https://yagisoftware.s3.amazonaws.com/4-how-to-customize-sorting-options-on-collection-page/collection2.png)
+![sort option](https://img.yagisoftware.com/4-how-to-customize-sorting-options-on-collection-page/collection2.png)
 
 ## How to change default sorting option on catalog / products page with coding
 
@@ -45,12 +45,12 @@ If you don't want to create a new collection for the Catalog/ products page just
 
 Select "Theme" > "Actions" > "Edit code"
 
-![theme edit code](https://yagisoftware.s3.amazonaws.com/4-how-to-customize-sorting-options-on-collection-page/edit_code.png)
+![theme edit code](https://img.yagisoftware.com/4-how-to-customize-sorting-options-on-collection-page/edit_code.png)
 
 
 Open "**collection.liquid**", this file controls the layout of the collection page. Depending on the theme you use, some of them might include a different section for it, if there's a section in this file, then we will navigate to that file instead.
 
-![collection.liquid](https://yagisoftware.s3.amazonaws.com/4-how-to-customize-sorting-options-on-collection-page/collection_template.png)
+![collection.liquid](https://img.yagisoftware.com/4-how-to-customize-sorting-options-on-collection-page/collection_template.png)
 
 Next, search for "**collection.default_sort_by**", and find for the result that starts the line with {% raw %}"{% assign" {% endraw %}, which for the example below, is the
 
@@ -61,7 +61,7 @@ Next, search for "**collection.default_sort_by**", and find for the result that 
 line.
 
 
-![default-sort-by](https://yagisoftware.s3.amazonaws.com/4-how-to-customize-sorting-options-on-collection-page/default_sort_by.png) 
+![default-sort-by](https://img.yagisoftware.com/4-how-to-customize-sorting-options-on-collection-page/default_sort_by.png) 
 
 
 We then proceed to add some code (the if and endif part) below it :
@@ -104,12 +104,12 @@ Similar to the previous section, we can edit the sorting options in code in the 
 
 Select "Theme" > "Actions" > "Edit code"
 
-![theme edit code](https://yagisoftware.s3.amazonaws.com/4-how-to-customize-sorting-options-on-collection-page/edit_code.png)
+![theme edit code](https://img.yagisoftware.com/4-how-to-customize-sorting-options-on-collection-page/edit_code.png)
 
 
 Open "**collection.liquid**", this file controls the layout of the collection page. Depending on the theme you use, some of them might include a different section for it, if there's a section in this file, then we will navigate to that file instead.
 
-![collection.liquid](https://yagisoftware.s3.amazonaws.com/4-how-to-customize-sorting-options-on-collection-page/collection_template.png)
+![collection.liquid](https://img.yagisoftware.com/4-how-to-customize-sorting-options-on-collection-page/collection_template.png)
 
 Next, search for "**for option in collection**", you will see a block like this : 
 
@@ -121,10 +121,10 @@ Next, search for "**for option in collection**", you will see a block like this 
 ```
 {% endraw %}
 
-![all sort options](https://yagisoftware.s3.amazonaws.com/4-how-to-customize-sorting-options-on-collection-page/all_sort_options.png)
+![all sort options](https://img.yagisoftware.com/4-how-to-customize-sorting-options-on-collection-page/all_sort_options.png)
 
 The code above ("for option..." block) will generate the dropdown list for the sort options : 
-![sort options UI](https://yagisoftware.s3.amazonaws.com/4-how-to-customize-sorting-options-on-collection-page/sort_options_ui.png)
+![sort options UI](https://img.yagisoftware.com/4-how-to-customize-sorting-options-on-collection-page/sort_options_ui.png)
 
 
 The code above will actually generate the following HTML code : 
@@ -182,6 +182,6 @@ For example, I don't want the "Date, old to new" sort option, and change the "Fe
 
 And here's the result : 
 
-![new sorting options](https://yagisoftware.s3.amazonaws.com/4-how-to-customize-sorting-options-on-collection-page/new_ui.png)
+![new sorting options](https://img.yagisoftware.com/4-how-to-customize-sorting-options-on-collection-page/new_ui.png)
 
 

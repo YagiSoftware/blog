@@ -18,9 +18,9 @@ To create a development store, you would first need to have a Shopify Partner ac
 
 After getting approved, you can log in to your partner account, and select **Stores** (on the left sidebar) > **Add Store** > **Development store**, then fill in the relevant detail and click "Save".
 
-![create development store 1](https://yagisoftware.s3.amazonaws.com/1-development-store-practice/store_1.png)
-![create development store 2](https://yagisoftware.s3.amazonaws.com/1-development-store-practice/store_2.png)
-![create development store 3](https://yagisoftware.s3.amazonaws.com/1-development-store-practice/store_3.png)
+![create development store 1](https://img.yagisoftware.com/1-development-store-practice/store_1.png)
+![create development store 2](https://img.yagisoftware.com/1-development-store-practice/store_2.png)
+![create development store 3](https://img.yagisoftware.com/1-development-store-practice/store_3.png)
 
 And now you should have a development store which you can do theme customization on it. Once you are happy with the theme, you can export the theme, and import it on the real production store.
 

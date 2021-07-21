@@ -9,11 +9,11 @@ If your product got backordered or got shipment delayed, displaying the delayed 
 
 To display text on the order status page, go to your Shopify store admin > **Settings** > **Checkout**
 
-![checkout settings](https://yagisoftware.s3.amazonaws.com/3-how-to-show-text-message-in-order-status-page/checkout_script_1.png)
+![checkout settings](https://img.yagisoftware.com/3-how-to-show-text-message-in-order-status-page/checkout_script_1.png)
 
 Then scroll down to **Order processing** section, and find the **Additional scripts** field.
 
-![checkout additional script](https://yagisoftware.s3.amazonaws.com/3-how-to-show-text-message-in-order-status-page/checkout_script_2.png)
+![checkout additional script](https://img.yagisoftware.com/3-how-to-show-text-message-in-order-status-page/checkout_script_2.png)
 
 
 Then paste in the following code into the **Additional scripts** field : 
@@ -29,9 +29,9 @@ Then paste in the following code into the **Additional scripts** field :
 ```
 
 Click save, then you can view this text in the order status page. You can select an order in the admin, then select "More actions" > "View order status page" to view the order status page.
-![view order status page](https://yagisoftware.s3.amazonaws.com/3-how-to-show-text-message-in-order-status-page/view_order_status.png)
+![view order status page](https://img.yagisoftware.com/3-how-to-show-text-message-in-order-status-page/view_order_status.png)
 
-![order status page message](https://yagisoftware.s3.amazonaws.com/3-how-to-show-text-message-in-order-status-page/message.png)
+![order status page message](https://img.yagisoftware.com/3-how-to-show-text-message-in-order-status-page/message.png)
 
 [Official Shopify documentation on the addContentBox function](https://help.shopify.com/en/manual/orders/status-tracking/customize-order-status/order-status-javascript-asset)
 
@@ -46,7 +46,7 @@ Currently Shopify doesn't have an official way to edit metafields for products, 
 
 
 After installing the Metafields app, open it :
-![open metafields app](https://yagisoftware.s3.amazonaws.com/2-how-to-hide-products-from-search-in-shopify-store/mt1.png)
+![open metafields app](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/mt1.png)
 
 
 
@@ -56,7 +56,7 @@ You can set the **Namespace** and **Key** to any value you want, but make sure t
 
 Set the **Type** to **String**, then type the message you want to display at the bottom text box, and click save.
 
-![metafields namespace key value](https://yagisoftware.s3.amazonaws.com/3-how-to-show-text-message-in-order-status-page/metafield_value.png)
+![metafields namespace key value](https://img.yagisoftware.com/3-how-to-show-text-message-in-order-status-page/metafield_value.png)
 
 
 Now go back to the Settings > Checkout > Additional script field, and replace the code with below : 
