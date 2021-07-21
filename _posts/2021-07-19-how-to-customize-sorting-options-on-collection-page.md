@@ -184,4 +184,5 @@ And here's the result :
 
 ![new sorting options](https://img.yagisoftware.com/4-how-to-customize-sorting-options-on-collection-page/new_ui.png)
 
+<script async data-uid="3f46096ca1" src="https://yagisoft.ck.page/3f46096ca1/index.js"></script>
 
