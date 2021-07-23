@@ -2,6 +2,7 @@
 layout: post
 title: How to apply discount code to only one item in an order
 date: 2021-07-23 16:26 +0800
+image: https://mugshotbot.com/m/22atVsJV
 ---
 
 Caveat: this is a workaround using Buy X Get Y discount type from Shopify, and the discount code will apply to the lowest priced item that is qualified for discount, and the discount type must be percentage (not fixed amount), and customer must order least two eligible items to get discount on one item.
@@ -34,3 +35,5 @@ Another caveat is that the customer must order at least two items from the colle
 
 
 With this workaround, you can have a discount code that apply discount to only one item in the order.
+
+<script async data-uid="3f46096ca1" src="https://yagisoft.ck.page/3f46096ca1/index.js"></script>
