@@ -2,6 +2,7 @@
 layout: post
 title: Add discount code in abandoned cart email content
 date: 2021-08-03 19:21 +0800
+image: https://mugshotbot.com/m/Ne7sjwM8
 ---
 
 Providing discount code to an abandoned cart email can incentivize a customer to complete their purchase, sometimes they might get shocked by shipping price or being undecisive, adding a discount code might help them to complete their purchase.
