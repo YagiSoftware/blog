@@ -20,7 +20,20 @@ Click "Add new template", then select "Product", "Liquid", and name it as "produ
 
 ![product liquid template](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/product_contact_us_new.png)
 
+Open the newly created "product.contactus.liquid" file, then find the part that is similar to `section "product-template"`. (Can be "product-form" on some theme). Remember this name, then we are going to find this section file next.
 
+![product-section-name](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/product-section.png)
+
+Next, open the section file, and select all (Ctrl + A or Command + A) and **copy** (Ctrl + C or Command + C) :
+![product-section-open](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/product-template-section.png)
+
+We will going to paste this in the new section we are going to create.
+
+Create a new section, and name it as **product-contactus-template** .
+![new section](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/new-section.png)
+![new section-2](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/new-section-2.png)
+
+Next, **replace** the code of the newly created section with the code we copied just now. Select all (Ctrl + A or Command A) and paste (Ctrl + V or Command + V).
 
 <video style="width: 100%;" controls>
   <source src="https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/containerclass.mp4" type="video/mp4">
