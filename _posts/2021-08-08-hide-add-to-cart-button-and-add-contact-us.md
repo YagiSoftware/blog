@@ -33,7 +33,9 @@ Create a new section, and name it as **product-contactus-template** .
 ![new section](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/new-section.png)
 ![new section-2](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/new-section-2.png)
 
-Next, **replace** the code of the newly created section with the code we copied just now. Select all (Ctrl + A or Command A) and paste (Ctrl + V or Command + V).
+Next, **replace** the code of the newly created section with the code we copied just now. Select all (Ctrl + A or Command A) and paste (Ctrl + V or Command + V), and click Save.
+
+![paste new section](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/paste-new-section.png)
 
 <video style="width: 100%;" controls>
   <source src="https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/containerclass.mp4" type="video/mp4">
