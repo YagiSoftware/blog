@@ -9,3 +9,20 @@ There might be some products which you don't want customers to be able to purcha
 This tutorial will guide you on how to hide the add to cart / buy now button, and optionally replace it with a "contact us" link. This tutorial will require you to edit code of your theme, knowledge of HTML / CSS / Liquid would help but it is not required. 
 
 ![before and after](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/beforeafter.png)
+
+## Create a new product template
+First thing, create a new product template. Select “**Theme**” > “**Actions**” > “**Edit code**”
+![edit code](https://img.yagisoftware.com/4-how-to-customize-sorting-options-on-collection-page/edit_code.png)
+
+Click "Add new template", then select "Product", "Liquid", and name it as "product.contactus" , and click "Create template".
+
+![add new template](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/add_new_template.png)
+
+![product liquid template](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/product_contact_us_new.png)
+
+
+
+<video style="width: 100%;" controls>
+  <source src="https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/containerclass.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
