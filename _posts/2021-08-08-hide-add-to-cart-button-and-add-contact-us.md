@@ -48,7 +48,7 @@ Then check the `class="..."` part, and copy the first word (separated by space),
 Your browser does not support the video tag.
 </video>
 
-From the example video above (from my store theme), the class name is `product-form__item` (yours might differ). Copy this word, then open the section file you have created previously (_product-contactus-template.liquid_).
+From the example video above (from my store theme), the class name is `product-form__item` (yours might differ). Copy this word, then **open the section file you have created previously** (_product-contactus-template.liquid_).
 
 At the bottom of **product-contactus-template.liquid**, add this block of code : 
 
@@ -85,5 +85,22 @@ Press save, it should look like this  :
 
 ## Update the new product template
 
+Open the new product template created just now (**“product.contactus.liquid”**), then find the part that is similar to section "product-template". (Can be “product-form” on some theme).
+
+![product contactus template](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/product-section.png)
+
+And then change this part to **product-contactus-template** , which is the name of section we modified just now.
+```
+{% raw %}{% section 'product-contactus-template' %}{% endraw %}
+```
+
+Press save, then in your Shopify Admin, go to the Product you want to hide add to cart / buy button.
+
+And change the **Theme template** to "contactus" , this will use the "product.contactus.liquid" file to display the product.
+![product template](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/change-product-template.png)
+
+Press save, then now when you view the product page, the "Add to cart" and "Buy now" button is gone!
+
+## Add a contact us link
 
 
