@@ -10,7 +10,7 @@ This tutorial will guide you on how to hide the add to cart / buy now button, an
 
 ![before and after](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/beforeafter.png)
 
-## Create a new product template
+## Create a new product template and section
 First thing, create a new product template. Select “**Theme**” > “**Actions**” > “**Edit code**”
 ![edit code](https://img.yagisoftware.com/4-how-to-customize-sorting-options-on-collection-page/edit_code.png)
 
@@ -33,11 +33,57 @@ Create a new section, and name it as **product-contactus-template** .
 ![new section](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/new-section.png)
 ![new section-2](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/new-section-2.png)
 
-Next, **replace** the code of the newly created section with the code we copied just now. Select all (Ctrl + A or Command A) and paste (Ctrl + V or Command + V), and click Save.
+Next, **replace** the code of the newly created section with the code we copied just now. Select all (Ctrl + A or Command A), backspace and paste (Ctrl + V or Command + V), and click Save.
 
 ![paste new section](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/paste-new-section.png)
+
+## Get the parent class name of the add to cart / buy button, and hide it
+
+Next, open your product page in your web browser. Right click on the "Add to cart" button, then select "**Inspect**" / "**Inspect Element**" , this will show the HTML code of the buttons. Then move your mouse to the code area, and slowly move up until the highlighted area includes both "Add to cart" and "checkout" button.
+
+Then check the `class="..."` part, and copy the first word (separated by space), this is the class name which we will use later to hide the add to cart / buy now buttons.
 
 <video style="width: 100%;" controls>
   <source src="https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/containerclass.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
+
+From the example video above (from my store theme), the class name is `product-form__item` (yours might differ). Copy this word, then open the section file you have created previously (_product-contactus-template.liquid_).
+
+At the bottom of **product-contactus-template.liquid**, add this block of code : 
+
+
+```
+{% raw %}{% stylesheet %}
+
+.product-form__item {
+  display: none;
+}
+
+{% endstylesheet %}{% endraw %}
+
+```
+
+Replace the ".product-form__item" with the word you have copied just now, remember to add a dot (**.**) before the word, as the dot means "class name". This block of code tells your Shopify store to hide the part containing add to cart / buy now button, with the "display : none" code.
+
+Eg: if your class name is **product-form__controls-group**, then it should look like this instead : 
+
+```
+{% raw %}{% stylesheet %}
+
+.product-form__controls-group {
+  display: none;
+}
+
+{% endstylesheet %}{% endraw %}
+
+```
+
+Press save, it should look like this  :
+![pasted code](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/product-pasted.png)
+
+
+## Update the new product template
+
+
+
