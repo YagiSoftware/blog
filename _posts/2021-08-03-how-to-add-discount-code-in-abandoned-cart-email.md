@@ -35,3 +35,5 @@ Scroll up and click "Save" to save the email content, then you can click the "Pr
 ![preview](https://img.yagisoftware.com/7-how-to-add-discount-code-in-abandoned-cart-email/preview.png)
 
 Your customer will then see this email content in their inbox if they have abandoned their cart.
+
+<script async data-uid="3f46096ca1" src="https://yagisoft.ck.page/3f46096ca1/index.js"></script>

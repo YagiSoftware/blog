@@ -129,3 +129,4 @@ Click "Save", then go to the product page that has **contactus** template chosen
 ![contact us button](https://img.yagisoftware.com/8-hide-add-to-cart-button-and-add-contact-us/contact-us-result.png)
 
 
+<script async data-uid="3f46096ca1" src="https://yagisoft.ck.page/3f46096ca1/index.js"></script>
