@@ -2,6 +2,7 @@
 layout: post
 title: How to remove "shipping calculated at checkout" text
 date: 2021-08-18 13:34 +0800
+image: https://mugshotbot.com/m/eeuZf3tr
 ---
 
 If your store is offering free shipping, it make sense to remove the "shipping calculated at checkout" text as this text would make the customer think that there might be additional shipping cost, which might make them hesitate to make the purchase thus reducing conversion rate.
