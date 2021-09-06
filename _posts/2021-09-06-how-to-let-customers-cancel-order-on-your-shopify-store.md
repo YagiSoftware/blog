@@ -2,6 +2,7 @@
 layout: post
 title: How to let customers cancel order on your Shopify store
 date: 2021-09-06 14:07 +0800
+image: https://mugshotbot.com/m/kTyZLMUu
 ---
 
 
