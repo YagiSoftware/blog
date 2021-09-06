@@ -13,9 +13,6 @@ Customers can make mistakes when ordering. They might enter the wrong shipping a
 
 What if the customer can cancel order on their own, without having to take away precious customer support time? Customer also get instant order cancellation / refund, which increase customer satisfaction and make them more likely to come back to your store, and might recommend to others as they feel your store is trustworthy. Wouldn't that be good? 
 
-By allowing customer to cancel on their own, you might reduce potential chargeback dispute filed by customer, especially when the product takes longer than expected to arrive, better let customer to cancel the order on their own before your company gets hit by a chargeback issued by bank.
-
-
 Unfortunately Shopify by default does not provide the cancellation function on customer side, you would have to custom code it on your store, hire an expert to do it for you, or install a Shopify app for it.
 
 With <a href="https://apps.shopify.com/cancellable?utm_source=yagi" target="_blank">Cancellable app</a>, you can let customers cancel order, edit order or reorder easily. (Disclaimer: I am the developer of this app)
