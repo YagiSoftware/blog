@@ -2,6 +2,7 @@
 layout: post
 title: How to deduct inventory for Draft Order on Shopify
 date: 2021-10-30 16:44 +0800
+image: https://mugshotbot.com/m/nwAKhiPe
 ---
 
 Shopify does provide a "Reserve items" function on Draft order, but it doesn't actually deduct the inventory count of the products in the draft order , wtf? Even after "reserving items", customer can still see the product available on the store, and proceed to add to cart and only to be greeted with a "sold out" error on the checkout page, what a bad user experience!
