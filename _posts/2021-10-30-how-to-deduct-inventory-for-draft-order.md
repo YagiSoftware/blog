@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to deduct inventory for Draft Order on Shopify
+title: How to deduct inventory for draft order on Shopify
 date: 2021-10-30 16:44 +0800
 image: https://mugshotbot.com/m/nwAKhiPe
 ---
@@ -72,7 +72,7 @@ I am actively supporting the app as well, if you have any question on installing
 
 Cheers,
 
-[Axel Kee](/about) (developer of Cancellable app)
+[Axel Kee](/about) (developer of Draft Order Helper app)
 
 
 
