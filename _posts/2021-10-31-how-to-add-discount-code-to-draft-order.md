@@ -2,6 +2,7 @@
 layout: post
 title: How to add discount code to draft order on Shopify
 date: 2021-10-31 00:16 +0800
+image: https://mugshotbot.com/m/vqTUNDIH
 ---
 
 The draft order feature on Shopify is great for taking order on phone, or at event booth. You can add discount individually to each item, but there's no discount code field on the checkout link generated from draft order?!
