@@ -2,6 +2,7 @@
 name:         Yagi Software
 tagline:      Baaaa
 baseurl:      ""
+url: "https://yagisoftware.com"
 locale:       "en"
 permalink: /articles/:title:output_ext
 
