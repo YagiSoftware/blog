@@ -2,6 +2,7 @@
 layout: post
 title: How to exclude sale items / products From Discount code
 date: 2022-03-09 23:21 +0800
+image: https://mugshotbot.com/m/c1QrhRVy
 ---
 
 
