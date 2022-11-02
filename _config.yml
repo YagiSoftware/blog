@@ -8,6 +8,7 @@ permalink: /articles/:title:output_ext
 
 # Gems
 plugins:
+  - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
 
