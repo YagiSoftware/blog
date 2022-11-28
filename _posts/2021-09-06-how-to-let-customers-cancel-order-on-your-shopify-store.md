@@ -18,7 +18,7 @@ Unfortunately Shopify by default does not provide the cancellation function on c
 With <a href="https://apps.shopify.com/cancellable?utm_source=yagi" target="_blank">Cancellable app</a>, you can let customers cancel order, edit order or reorder easily. (Disclaimer: I am the developer of this app)
 
 <div style="width: 100%; text-align: center;">
-  <a href="https://apps.shopify.com/cancellable" target="_blank"><img src="https://img.yagisoftware.com/Shopify-App-Store-Badge-Final-Black.png" style="max-width: 250px; border-radius: 0; box-shadow: none; border-width: 0;"></a>
+  <a href="https://apps.shopify.com/cancellable?utm_source=yagi" target="_blank"><img src="https://img.yagisoftware.com/Shopify-App-Store-Badge-Final-Black.png" style="max-width: 250px; border-radius: 0; box-shadow: none; border-width: 0;"></a>
 </div>
 
 <br>
