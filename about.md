@@ -6,7 +6,7 @@ id: about
 ---
 
 <div style="width: 100%; text-align:center; margin: 2rem auto;">
-<img src="{{ site.baseurl }}/axel.jpg" style="width: 100px; height: 100px; border-radius: 100%;">
+<!-- <img src="{{ site.baseurl }}/avatar.jpg" style="width: 100px; height: 100px; border-radius: 100%;"> -->
 </div>
 
 Howdy! My name is **Axel Kee**. I am the founder, software developer, copywriter and goat-keeper for Yagi Software, based in Kuala Lumpur, Malaysia.
