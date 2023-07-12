@@ -49,3 +49,5 @@ I am actively supporting the app as well, if you have any question on installing
 Cheers,
 
 [Axel Kee](/about) (developer of Draft Order Helper app)
+
+<script async data-uid="3f46096ca1" src="https://yagisoft.ck.page/3f46096ca1/index.js"></script>
