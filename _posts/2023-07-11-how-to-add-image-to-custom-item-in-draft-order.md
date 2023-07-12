@@ -6,7 +6,7 @@ date: 2023-07-11 16:37 +0800
 
 Currently Shopify does not have a way to attach image to a custom line item in a draft order, which is unfortunate, as customer needs to see how the product looks like before deciding to purchase.
 
-This article will show a workaround for this issue, there is still some imperfection, like the image will not show directly on the checkout page (due to Shopify limitation), but this article will guide you to show the image on the invoice email (which the customer can view and print), the draft order page in the Shopify Admin (which the staff can view and print), and also on the packing slip (which the staff can view and print).
+This article will show a workaround for this issue, there is still some imperfection, like the image will not show directly on the checkout page (due to Shopify limitation), but **this article will guide you to show the image** on the **invoice email** (which the customer can view and print), the **draft order page** in the Shopify Admin (which the staff can view and print), and also on the **packing slip** (which the staff can view and print).
 
 
 Disclaimer: This workaround requires usage of an app, Draft Order Helper [https://apps.shopify.com/draft-helper](https://apps.shopify.com/draft-helper). The app is used to add the image link information to the custom line item, I am the developer of the app, the app has a free plan which you can give it a try.
@@ -52,4 +52,31 @@ Although the custom image is not shown directly on the checkout page, customer c
 
 ## Draft Order Invoice Email Template
 
-WIP:
+We can edit the draft order invoice email template, to show the image for the custom item in the draft order.
+
+Go to your store Settings > Notifications, then select "Draft Order Invoice".
+
+![Edit draft order invoice template](https://img.yagisoftware.com/15-custom-line-item-image/9draft_order_invoice_template.png)
+
+Click "Edit Code" : 
+
+![Edit code](https://img.yagisoftware.com/15-custom-line-item-image/10edit_code.png)
+
+Click anywhere inside the **Email body** field, then press Control (or Command if you are using Mac) + F to search, and search for "if line.image"
+
+![Find and paste code](https://img.yagisoftware.com/15-custom-line-item-image/11find.png)
+
+Then paste the code below, right after the `{% raw %}{% endif %}{% endraw %}` line that appears at the end of `{% raw %}{% if line.image %}{% endraw %}` part.
+
+```{% raw %}
+{% if line.properties.image %}
+  <img src="{{ line.properties.image }}" align="left" width="60" height="60" class="order-list__product-image"/>
+{% endif %}
+{% endraw %}```
+
+Click "Save", then go back to your draft order detail page, and click "Send Invoice" > "Review Invoice", you should see the image there in the preview.
+
+![review invoice](https://img.yagisoftware.com/15-custom-line-item-image/12custom_image_invoice.png)
+
+
+## Packing Slip Template WIP
