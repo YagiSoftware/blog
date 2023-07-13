@@ -2,6 +2,7 @@
 layout: post
 title: How to add image to custom line item in a Draft Order
 date: 2023-07-11 16:37 +0800
+image: https://mugshotbot.com/m/jTore6xx
 ---
 
 Currently Shopify does not have a way to attach image to a custom line item in a draft order, which is unfortunate, as customer needs to see how the product looks like before deciding to purchase.
