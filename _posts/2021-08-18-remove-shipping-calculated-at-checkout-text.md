@@ -24,5 +24,3 @@ Then you can edit these translations text:
 You can set them as blank to remove them, then click "Save".
 
 After saving the text, you should see the text on cart / product page is changed / removed.
-
-<script async data-uid="3f46096ca1" src="https://yagisoft.ck.page/3f46096ca1/index.js"></script>

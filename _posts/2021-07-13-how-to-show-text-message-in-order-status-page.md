@@ -77,6 +77,3 @@ Now go back to the Settings > Checkout > Additional script field, and replace th
 {% endraw %}
 
 This code will show the message on order status page only if we have set the metafields for it (Namespace 'delay' and Key 'message'), you can change the 'delay' and 'message' in the code above to the values you have set in the Namespace and Key earlier.
-
-
-<script async data-uid="3f46096ca1" src="https://yagisoft.ck.page/3f46096ca1/index.js"></script>

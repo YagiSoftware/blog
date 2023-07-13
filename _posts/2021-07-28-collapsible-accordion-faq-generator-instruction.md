@@ -33,5 +33,3 @@ If you want to remove the accordion code in the future, you can click the show H
 
 ```
 
-
-<script async data-uid="3f46096ca1" src="https://yagisoft.ck.page/3f46096ca1/index.js"></script>

@@ -108,5 +108,3 @@ Now the product which you have removed from the "All" collection will not show u
 ## Undo hide product
 
 If you want the product to show on search, simply remove the metafields (namespace seo, key hidden) and click "Save", also remember to add back the product to the "All" collection.
-
-<script async data-uid="3f46096ca1" src="https://yagisoft.ck.page/3f46096ca1/index.js"></script>

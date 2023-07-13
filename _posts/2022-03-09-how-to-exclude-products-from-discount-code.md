@@ -44,5 +44,3 @@ Select your discount code in the Shopify Admin > Discounts. Then in the **Applie
 
 
 And now your discount code should exclude the sale items / products 🙌.
-
-<script async data-uid="3f46096ca1" src="https://yagisoft.ck.page/3f46096ca1/index.js"></script>

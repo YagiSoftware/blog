@@ -85,5 +85,3 @@ Cheers,
 
 [Axel Kee](/about) (developer of Cancellable app)
 
-
-<script async data-uid="3f46096ca1" src="https://yagisoft.ck.page/3f46096ca1/index.js"></script>

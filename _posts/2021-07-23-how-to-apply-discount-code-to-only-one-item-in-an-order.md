@@ -35,5 +35,3 @@ Another caveat is that the customer must order at least two items from the colle
 
 
 With this workaround, you can have a discount code that apply discount to only one item in the order.
-
-<script async data-uid="3f46096ca1" src="https://yagisoft.ck.page/3f46096ca1/index.js"></script>
