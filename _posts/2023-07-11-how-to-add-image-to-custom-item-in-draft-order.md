@@ -6,7 +6,7 @@ date: 2023-07-11 16:37 +0800
 
 Currently Shopify does not have a way to attach image to a custom line item in a draft order, which is unfortunate, as customer needs to see how the product looks like before deciding to purchase.
 
-This article will show a workaround for this issue, there is still some imperfection, like the image will not show directly on the checkout page (due to Shopify limitation), but **this article will guide you to show the image** on the **invoice email** (which the customer can view and print), the **draft order page** in the Shopify Admin (which the staff can view and print), and also on the **packing slip** (which the staff can view and print).
+This article will show a workaround for this issue, there is still some imperfection, like the image will not show directly on the checkout page (due to Shopify limitation, but customer can still click on the link on the checkout page to see the image), **this article will guide you to show the image** on the **invoice email** (which the customer can view and print), the **draft order page** in the Shopify Admin (which the staff can view and print), and also on the **packing slip** (which the staff can view and print).
 
 
 Disclaimer: This workaround requires usage of an app, Draft Order Helper [https://apps.shopify.com/draft-helper](https://apps.shopify.com/draft-helper). The app is used to add the image link information to the custom line item, I am the developer of the app, the app has a free plan which you can give it a try.
@@ -79,4 +79,35 @@ Click "Save", then go back to your draft order detail page, and click "Send Invo
 ![review invoice](https://img.yagisoftware.com/15-custom-line-item-image/12custom_image_invoice.png)
 
 
-## Packing Slip Template WIP
+## Packing Slip Template
+
+We can edit the packing slip template, to show the image for the custom item in the draft order.
+
+Go to your store Settings > "Shipping and delivery", then click "Edit" on the packing slip template.
+
+![shipping settings](https://img.yagisoftware.com/15-custom-line-item-image/13shipping.png)
+
+![edit packing slip](https://img.yagisoftware.com/15-custom-line-item-image/14edit_packing_slip.png)
+
+
+Click anywhere in the code box,  then press Control (or Command if you are using Mac) + F to search, and search for "if line_item.image"
+
+![find and add the code](https://img.yagisoftware.com/15-custom-line-item-image/15find_code.png)
+
+Then paste the code below, right after the `{% raw %}{% endif %}{% endraw %}` line that appears at the end of `{% raw %}{% if line_item.image ... %}{% endraw %}` part.
+
+```{% raw %}
+{% if line_item.properties.image %}
+  <div class="aspect-ratio aspect-ratio-square" style="width: {{ desired_image_size }}px; height: {{ desired_image_size }}px;">
+  {{ line_item.properties.image | img_tag: '', 'aspect-ratio__content' }}
+  </div>
+{% endif %}
+{% endraw %}```
+
+Click "Save", then now when the draft order is paid and turn into an order, the custom image will show on the packing slip.
+
+![print packing slip](https://img.yagisoftware.com/15-custom-line-item-image/16print_packing_slip.png)
+
+![custom item image is shown on packing slip](https://img.yagisoftware.com/15-custom-line-item-image/17slip.png)
+
+
