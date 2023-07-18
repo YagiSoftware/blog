@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://use.typekit.net/luz6otb.css">
 
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% endif %}
+    <meta name=”robots” content="index, follow">
+
     <title>{{ page.title }}</title>
     <!-- Include CDN JavaScript -->
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/dist.css" media="screen">

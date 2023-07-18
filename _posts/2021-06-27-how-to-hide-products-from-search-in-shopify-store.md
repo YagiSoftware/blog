@@ -1,77 +1,55 @@
 ---
 layout: post
-title: How to hide products from search in Shopify store
+title: How to hide products from search and search engine in Shopify store
 date: 2021-06-27 17:42 +0800
 image: https://mugshotbot.com/m/AKOkh1ZJ
+description: Go to the product which you want to hide from store search and search engine, scroll down to the 'Metafields' section, then type "1" for the 'Hide from search engine' field (that we created earlier) ...
 ---
 
-
+Last updated at 18 July 2023.
 
 Sometimes you might have a special product or service which you don't want a customer to be able to search from your store search or Google search, as you want to only let certain customers to access it via direct link from email or from an Adwords campaign.
-
 
 
 Changing the product status to draft does hide it from search, but it would make it unavailable to those who have a direct link as well, hence this method does not work.
 
 
+With the recent metafields feature released by Shopify, you can hide product from search without having to edit the code on your collection or search page. There is a preset metafields value we can set to instruct Shopify to hide the product from the store search and also Google search (and other Search Engine like Bing etc).
 
-There's ways to hide product in search using product tags and editing code on the collection or search page template, but if you are not familiar with coding, it can be risky to do so as it might cause customer to unable to browse the product collections if you happen to accidentally mess up the collection page.
+Go to your store settings, and select "**Custom Data**" :
 
+![Select custom data](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/1custom_data.png)
 
+Select **Products** in the Metafields list :
 
-Fortunately, you can hide product from search without having to edit the code on your collection or search page.
+![Select products](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/2products.png)
 
+Click **Add definition** :
 
-
-
-You can utilize the "metafields" function from Shopify to hide the product from search. If you haven't heard of the term "metafields" before, metafields are extra pieces of data that you can attach to products, customers, orders, and other objects in your Shopify store.
-
-
-
-Currently Shopify doesn't have an official way to edit metafields for products, you would have to download third party apps to be able to edit metafields. I recommend using [Metafields Custom Field Master](https://apps.shopify.com/metafields-manager-by-hulkapps?) app to edit metafields, as they have a generous free plan that lets you add metafields to unlimited products, I will be using this app for the following steps.
+![Add definitions](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/3add_def.png)
 
 
-
-After installing the Metafields app, open it :
-![open metafields app](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/mt1.png)
-
+For the Namespace and key, type in "**seo.hidden**" (must be exactly this), then for the "Name" and "Description", you can type any text which you can use to identify this metafield later on. (We use "Hide from store search and search engine")
+![type in "seo.hidden" into namespace](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/4namespace.png)
 
 
-Then select "Product":
+Click "Select type", then select "Integer", then click "Save" to save this metafield definition.
 
-![metafields product](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/mt2.png)
-
-
-
-Select the product you want to hide from search : 
-
-![select product to hide from search](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/mt3.png)
+![set type to integer](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/5integer.png)
 
 
-
-Fill in the metafields as follows :
-
+Then go to the product which you want to hide from store search and search engine, scroll down to the "Metafields" section, then type "1" for the "Hide from search engine" field (that we created earlier). Typing "1" will hide the product from store search and search engine like Google search results etc.
 
 
-Namespace: **seo**
+![set product to hidden](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/6set_hidden.png)
 
-Key: **hidden**
-
-Type: **Integer**
-
-Integer: **1**
-
-
-Then click "Save".
-
-![fill in metafields](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/mt4.png)
 
 
 
 And now this product will not show up in your store search and search engine like Google. You can try search name of this product in your store and it won't appear in the search result. How this works is [explained by Shopify here](https://shopify.dev/tutorials/manage-seo-data-with-admin-api#hide-a-resource-from-search-engines-and-sitemaps).
 
 
-
+Although the product is hidden from search, it might still appear on the "All products" catalog in your store. In the next section, we will look into how to remove it from the catalog.
 
 
 ## Hide product from catalog page
