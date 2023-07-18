@@ -16,6 +16,14 @@ Changing the product status to draft does hide it from search, but it would make
 
 With the recent metafields feature released by Shopify, you can hide product from search without having to edit the code on your collection or search page. There is a preset metafields value we can set to instruct Shopify to hide the product from the store search and also Google search (and other Search Engine like Bing etc).
 
+Here's a video walkthrough (you can scroll down for detailed steps) :
+
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kbtC8RNsmXY?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<br><br><br>
+
 Go to your store settings, and select "**Custom Data**" :
 
 ![Select custom data](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/1custom_data.png)
@@ -85,4 +93,4 @@ Now the product which you have removed from the "All" collection will not show u
 
 ## Undo hide product
 
-If you want the product to show on search, simply remove the metafields (namespace seo, key hidden) and click "Save", also remember to add back the product to the "All" collection.
+If you want the product to show on search, simply remove the value for the "hide from search engine" metafield field in your product page, and click "Save", also remember to add back the product to the "All" collection.
