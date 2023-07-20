@@ -1,9 +1,9 @@
 ---
 layout: post
-title: How to hide products from search and search engine in Shopify store
+title: How to hide products from search in Shopify store
 date: 2021-06-27 17:42 +0800
 image: https://mugshotbot.com/m/AKOkh1ZJ
-description: Go to the product which you want to hide from store search and search engine, scroll down to the 'Metafields' section, then type "1" for the 'Hide from search engine' field (that we created earlier) ...
+description: Go to your Shopify Admin, select the product which you want to hide from store search and search engine, scroll down to the 'Metafields' section, then type "1" for the 'Hide from search engine' field (that we created earlier) ...
 ---
 
 Last updated at 18 July 2023.
