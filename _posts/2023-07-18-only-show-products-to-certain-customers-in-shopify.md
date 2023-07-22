@@ -3,6 +3,7 @@ layout: post
 title: Only show products to certain customers in Shopify (without app)
 date: 2023-07-18 12:12 +0800
 description: In the Shopify theme code editor, we search for "product.json" file, open it, and search for the "main-product" text, and duplicate the "main-product.liquid" file
+image: https://img.yagisoftware.com/16-only-show-product-certain-customer/cover.png
 ---
 
 It could be some early drop of products which you only want VIP customer to be able to purchase first, or wholesale products with heavily discounted price which you only want registered wholesale customer to be able to purchase it.
