@@ -1,0 +1,31 @@
+---
+layout: default
+title: Yagi Software - Articles
+id: articles
+---
+
+<h1 class="font-bold text-gray-700 text-2xl lg:text-5xl mb-8">Articles</h1>
+{% for post in site.posts  %}
+  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+  {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+
+  {% if forloop.first %}
+  <h2 id="{{ this_year }}-ref" class="font-bold text-3xl mt-12">{{this_year}}</h2>
+  <ul class="posts">
+  {% endif %}
+
+  <li class="mb-3">
+    <a class="article text-lg lg:text-2xl text-gray-800" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    <span class="block text-gray-400 text-sm">{{ post.date | date_to_long_string }}</span>
+  </li>
+
+  {% if forloop.last %}
+  </ul>
+  {% else %}
+    {% if this_year != next_year %}
+    </ul>
+    <h2 id="{{ next_year }}-ref" class="font-bold text-3xl mt-12">{{next_year}}</h2>
+    <ul class="posts">
+    {% endif %}
+  {% endif %}
+{% endfor %}
