@@ -32,7 +32,7 @@ header .gradient {
 
 .posts li::before {
   display: inline-block;
-  content: '✒';
+  content: '◆ ';
   color: #8fa37c;
   position: relative;
   top: -2px;
