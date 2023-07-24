@@ -2,7 +2,8 @@
 layout: post
 title: How to edit / remove 'Shipping calculated at Checkout' text in Shopify
 date: 2023-07-24 02:46 +0800
-description: Go to your Shopify Admin, select "Themes" (under Online Store), select your current active theme, then click "**Edit default theme content**", and search for "calculated at checkout"
+description: Go to your Shopify Admin, select "Themes" (under Online Store), select your current active theme, then click "Edit default theme content", and search for "calculated at checkout"
+image: https://img.yagisoftware.com/17-how-to-edit-remove-shipping-calculated-at-checkout-text/cover.png
 ---
 
 By default, Shopify will place a "Shipping calculated at Checkout" text on the cart and product page, which is not really informative to the customer, customers want to know what day will the product ships, or if there is any free shipping provided. (Providing free shipping is a good way to increase conversion rate!).
