@@ -22,8 +22,6 @@ Here's a video walkthrough (you can scroll down for detailed steps) :
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kbtC8RNsmXY?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-<br><br><br>
-
 Go to your store settings, and select "**Custom Data**" :
 
 ![Select custom data](https://img.yagisoftware.com/2-how-to-hide-products-from-search-in-shopify-store/1custom_data.png)
