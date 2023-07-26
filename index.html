@@ -125,4 +125,15 @@ id: index
 
 <div class="mx-auto max-w-3xl pt-8 mt-8">
   <h2 class="font-semibold text-2xl md:text-5xl tracking-tight">Articles</h2>
+  <h3 class="my-4 text-gray-500">Level up your store's customer experience with easy to follow tutorials</h3>
+
+  <ul class="posts">
+  {% for post in site.posts limit:5 %}
+    
+    <li class="mb-3">
+      <a class="article text-lg lg:text-2xl text-gray-800" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+  <a target="_blank" href="/articles" class="mt-8 cursor-pointer rounded-md bg-white px-6 py-3 text-lg font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Read more articles</a>
 </div>
