@@ -3,14 +3,30 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 body {
   font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   color: #222;
   background-color: #f9f9f9;
 }
 
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+}
+blockquote {
+  quotes: "“" "”" "‘" "’";
+}
+
+input.formkit-input:focus {
+  --tw-ring-color: #6fb172;
+}
 header {
   font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, serif;
   background-color: #708e5c;
