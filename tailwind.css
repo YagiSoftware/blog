@@ -113,6 +113,10 @@ header .gradient {
   margin: 2rem auto 2rem auto;
 }
 
+#post-content ol {
+  list-style-type: decimal;
+}
+
 #disqus_thread {
   font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, serif;
 }

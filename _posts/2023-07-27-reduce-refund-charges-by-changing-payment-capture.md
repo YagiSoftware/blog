@@ -12,9 +12,17 @@ By default, Shopify will automatically charge the customers's card immediately w
 
 To do so, we can change the payment capture setting to Manual Capture or Automatically capture when the order is fulfilled in the store settings.
 
+
+1. Go to your Shopify store settings, then select "Payments"
+2. Then find the "Payment capture method" section, and click "Manage"
 ![Store settings](https://img.yagisoftware.com/18-manual-payment-capture/1settings.png)
 
+3. You can select either "Automatically when order is fulfilled" or "Manually". Both option will authorize the customers payment method (which give your store permission to charge them later, but they are not charged when an order is placed).
 ![Capture payment settings](https://img.yagisoftware.com/18-manual-payment-capture/2capture_option.png)
+
+If you select "Automatically when order is fulfilled" , Shopify will charge the customer when you mark an order as fulfilled in Shopfiy Admin.
+
+If you select "Manually", you will have to go to the order
 
 ![Change payment capture to manual, or only capture upon fulfillment](https://img.yagisoftware.com/18-manual-payment-capture/3capture.png)
 
