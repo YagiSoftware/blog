@@ -7,7 +7,7 @@ id: about
 
 <div style="width: 100%; text-align:center; margin: 2rem auto;">
 <!-- <img src="{{ site.baseurl }}/avatar.jpg" style="width: 100px; height: 100px; border-radius: 100%;"> -->
-  <img src="profile2.jpg" class="ml-auto block w-48 border border-gray-200 rounded-full" alt="Axel Kee"/>
+  <img src="profile3.png" class="ml-auto block w-48 border border-gray-200 rounded-full" alt="Axel Kee"/>
   <p class="mt-4 text-gray-500 text-sm">Axel Kee</p>
 </div>
 
