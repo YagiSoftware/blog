@@ -4,6 +4,8 @@ title: How to add agree to terms and conditions checkbox in Shopify
 date: 2023-08-12 00:00 +0800
 ---
 
+<!-- Add pain description -->
+
 Notice: This tutorial adds the checkbox on the cart page (not the checkout page, as modifying the checkout page requires Shopify Plus plan), and this tutorial assumes your store is using newer themes that is Online Store 2.0 compatible like Dawn (or other newer themes that support blocks).
 
 At the end of tutorial, you will be able to add a checkbox for customer to agree to terms and conditions in the cart page like this :
@@ -13,9 +15,9 @@ At the end of tutorial, you will be able to add a checkbox for customer to agree
 When customer checks the checkbox and place an order, the order will contain the time which the customer has checked the checkbox, this can be useful as proof in case of any legal dispute.
 
 ![Proof of checked box](https://img.yagisoftware.com/19-terms-checkbox/yes_check.png)
-<!-- Gifs of showing the effect -->
 
-<!-- proof of checkbox checked -->
+
+<!-- Add table of content of headings -->
 
 <br><br>
 
@@ -158,7 +160,29 @@ Then you can add the following code, after the `render block` line that is below
 Click "Save", and now you have successfully added the terms and agreement checkbox snippet! In the next section, we will enable the checkbox in the Theme Editor.
 
 ## Enable and customize the terms checkbox in Theme Editor
+Go to your Shopify Admin, select "Online Store" > "Themes", then go to the theme which you have added the snippet just now, and click "Customize": 
+![Go to Online Store, Themes, and click Customize](https://img.yagisoftware.com/19-terms-checkbox/1customize_theme.png)
 
+Navigate to the Cart page :
+![Navigate to the cart page](https://img.yagisoftware.com/19-terms-checkbox/13cart.png)
+
+In the Subtotal section (in the left sidebar), Click "Add block", and select "Termsbox" :
+![Add termsbox block to Subtotal section](https://img.yagisoftware.com/19-terms-checkbox/14add_block.png)
+
+You can rearrange the block to move it above the checkout button, and you can click on the block name to tweak its settings : 
+![Rerrange and tweak settings of termsbox block](https://img.yagisoftware.com/19-terms-checkbox/15click_block.png)
+
+You can configure the text of the checkbox, and set the page of the Terms & Agreement which the link will link to, and make the checkbox mandatory / optional to check.
+![Configure the termsbox block settings](https://img.yagisoftware.com/19-terms-checkbox/16block_settings.png)
+
+
+After saving the changes, you can go to your store, add items to cart, and go to the cart page, and you can see the checkbox in action : 
+
+![Terms checkbox demo](https://img.yagisoftware.com/19-terms-checkbox/checkbox_demo.gif)
+
+When customer checks the checkbox and place an order, the order will contain the time which the customer has checked the checkbox, this can be useful as proof in case of any legal dispute.
+
+![Proof of checked box](https://img.yagisoftware.com/19-terms-checkbox/yes_check.png)
 
 <!-- ensure customer will go to the cart page -->
 <!-- disable cart drawer, make when click cart icon, go to cart page -->
