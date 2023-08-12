@@ -68,6 +68,98 @@ Click "Save" to save the changes, and the Checkout button is now hidden from the
 <br><br>
 
 ## Add the terms and agreement checkbox snippet
+
+Go to your store Shopify Admin, then select "Online Store" > "Theme", go to your current theme and select "Edit Code" :
+![Edit code on current Shopify theme](https://img.yagisoftware.com/16-only-show-product-certain-customer/3edit_code.png)
+
+Then click the "Snippets" folder on the left side bar, and click "Add a new snippet", then name the file "**cart-termsbox**" (must be exactly this), and click "Done".
+![Add snippets](https://img.yagisoftware.com/19-terms-checkbox/9add_snippets.png)
+
+Then open this link (<a href="https://github.com/YagiSoftware/termsbox/blob/master/snippets/cart-termsbox.liquid" target="_blank">cart-termsbox.liquid</a>), and copy the code there and paste it in your newly created snippet file.
+
+![Paste code](https://img.yagisoftware.com/19-terms-checkbox/10paste_code.png)
+
+
+Next, in the Theme Editor, search for "main-cart-footer", then open the  "main-cart-footer.liquid" file, and scroll to the bottom, and paste this code right before the `{ "type": "@app" }` part :
+
+```
+{
+  "type": "termsbox",
+  "name": "Termsbox",
+  "limit": 1,
+  "settings": [
+    {
+      "id": "prelink_text",
+      "type": "text",
+      "label": "Text before the link to the terms",
+      "default": "I have read"
+    },
+    {
+      "id": "link_text",
+      "type": "text",
+      "label": "The link text of the terms",
+      "default": "Terms and Conditions"
+    },
+    {
+      "id": "postlink_text",
+      "type": "text",
+      "label": "Text after the link to the terms",
+      "default": " and agree"
+    },
+    {
+      "id": "terms_page",
+      "type": "page",
+      "label": "Terms and Conditions page"
+    },
+    {
+      "type": "range",
+      "id": "checkbox_scale",
+      "min": 1,
+      "max": 3,
+      "step": 0.1,
+      "label": "Checkbox size",
+      "default": 1.2
+    },
+    {
+      "type": "checkbox",
+      "id": "mandatory",
+      "label": "Customer must check the checkbox to checkout",
+      "default": true
+    },
+    {
+      "id": "internal_label",
+      "type": "text",
+      "label": "Internal label that will be shown in the order's Additional Details",
+      "default": "Customer agreed to terms"
+    }
+  ]
+},
+```
+
+![Main cart footer](https://img.yagisoftware.com/19-terms-checkbox/11main-cart-footer.png)
+
+
+Click "Save", then in the same file, search for this text `when '@app'` (You can press Control + F to search, or Command + F if you are using Mac).
+
+Then you can add the following code, after the `render block` line that is below `when '@app'` : 
+
+{% raw %}
+```liquid
+{%- when 'termsbox' -%}
+  <div {{ block.shopify_attributes }}>
+    {% render 'cart-termsbox' , block: block %}
+  </div>
+```
+{% endraw %}
+
+![block case when paste code](https://img.yagisoftware.com/19-terms-checkbox/12when.png)
+
+
+Click "Save", and now you have successfully added the terms and agreement checkbox snippet! In the next section, we will enable the checkbox in the Theme Editor.
+
+## Enable and customize the terms checkbox in Theme Editor
+
+
 <!-- ensure customer will go to the cart page -->
 <!-- disable cart drawer, make when click cart icon, go to cart page -->
 <!-- hide "buy now" option on the product page -->
