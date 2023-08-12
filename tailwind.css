@@ -151,5 +151,5 @@ footer {
 }
 
 #post-content img {
-  @apply mx-auto shadow border border-gray-300 rounded my-4;
+  @apply mx-auto shadow border border-gray-300 rounded my-4 max-h-screen;
 }
