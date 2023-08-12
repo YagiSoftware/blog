@@ -5,6 +5,14 @@ date: 2023-08-12 00:00 +0800
 ---
 
 <!-- Add pain description -->
+Customers might have bought item from your store, and later wanted to claim refund on the order due to various reasons, even though your store has a non refundable product policy, and worse they might even threaten a chargeback!
+
+It would be difficult to have a stand on ground in a legal dispute if you don't have proof that the customers have indeed read and agreed to your store terms / policy.
+
+Adding a checkbox which customers have to check and confirm that they have read and agree to terms before checkout would help you have more grounds to stand on, in case of a legal dispute.
+
+In this tutorial, you will learn to implement a "agree to terms and conditions" checkbox on your Shopify store.
+
 
 Notice: This tutorial adds the checkbox on the cart page (not the checkout page, as modifying the checkout page requires Shopify Plus plan), and this tutorial assumes your store is using newer themes that is Online Store 2.0 compatible like Dawn (or other newer themes that support blocks).
 
@@ -17,9 +25,15 @@ When customer checks the checkbox and place an order, the order will contain the
 ![Proof of checked box](https://img.yagisoftware.com/19-terms-checkbox/yes_check.png)
 
 
-<!-- Add table of content of headings -->
-
 <br><br>
+### Table of contents
+<a href="#ensure-customers-will-go-to-cart-page-before-checking-out">Ensure customers will go to cart page before checking out</a>
+<br>
+<a href="add-the-terms-and-agreement-checkbox-snippet">Add the terms and agreement checkbox snippet</a>
+<br>
+<a href="enable-and-customize-the-terms-checkbox-in-theme-editor">Enable and customize the terms checkbox in Theme Editor</a>
+<br>
+
 
 ## Ensure customers will go to cart page before checking out
 
