@@ -2,12 +2,14 @@
 layout: post
 title: How to add agree to terms and conditions checkbox in Shopify
 date: 2023-08-12 00:00 +0800
+description: In your Shopify Theme, click "Customize", navigate to "Cart" page, select the Subtotal section, Click "Add block", and select "Termsbox"...
+image: https://img.yagisoftware.com/19-terms-checkbox/cover.png
 ---
 
 <!-- Add pain description -->
-Customers might have bought item from your store, and later wanted to claim refund on the order due to various reasons, even though your store has a non refundable product policy, and worse they might even threaten a chargeback!
+Customers might have bought item from your store, and later wanted to claim refund on the order due to various reasons, even though your store has a non refundable product policy, and worse they might even threaten a chargeback! 
 
-It would be difficult to have a stand on ground in a legal dispute if you don't have proof that the customers have indeed read and agreed to your store terms / policy.
+We can't assume every customers will read refund policy, shipping terms and product descriptions, hence we have to preemptively attract their attention, one of the way is to grey out the checkout button, and only allow them to checkout after they have checked "I have read and agree to terms". (This checkbox might be even mandatory for stores in EU / GDPR compliant countries )
 
 Adding a checkbox which customers have to check and confirm that they have read and agree to terms before checkout would help you have more grounds to stand on, in case of a legal dispute.
 
