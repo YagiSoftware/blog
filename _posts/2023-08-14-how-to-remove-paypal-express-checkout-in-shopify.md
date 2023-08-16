@@ -14,8 +14,6 @@ When you set up a new Shopify store and configured Paypal, Shopify will automati
 
 The problem with these express checkout buttons placed on top, is that it can confuse customers into thinking that these are the only payment methods available, and if they don't have these payment methods (eg: Paypal, or Google Pay), they will leave the checkout page in frustration, thinking that the store can't accept their payments, causing your store conversion rate to drop significantly! 💸
 
-Some of the merchants have resorted to removing Paypal method, just to remove the Paypal Express button at the top of checkout page!
-
 
 You might have came across solutions that instruct you to add code into the cart file like this :
 
