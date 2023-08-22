@@ -17,7 +17,7 @@ Before we begin the tutorial, it would be best to [make a backup of your theme](
 
 = Table of contents
 
-= First section title (Create metafield definition for page to store the password)
+## Create metafield definition for page to store the password
 
 First, we will create a metafield definiton for pages, to store the password value. Go to your store settings, select "Custom Data" on the left side bar, and click "Pages":
 ![Create custom data metafield definition for Pages](https://img.yagisoftware.com/22-password-protect-page/1custom_data.png)
@@ -34,7 +34,9 @@ Next, go to your desired page (Online Stores > Pages, and select your page), and
 In the password metafield section, type in your desired password value (visitor will need to input this password value to view the page content) : 
 ![Input your desired password for the password metafield](https://img.yagisoftware.com/22-password-protect-page/5page_set_password.png)
 
-= Second section title (Modify theme code to add password input box and gate the content)
+<br><br>
+
+## Modify theme code to add password input box and gate the content
 
 Go to your store Shopify Admin, then select "Online Store" > "Theme", go to your current theme and select "Edit Code" :
 ![Edit code on current Shopify theme](https://img.yagisoftware.com/16-only-show-product-certain-customer/3edit_code.png)
@@ -42,3 +44,68 @@ Go to your store Shopify Admin, then select "Online Store" > "Theme", go to your
 Then search for "page.json" in the left side bar of the Theme code editor, and open the "page.json" file, locate the value for "main" -> "type". The value usually should be "main-page", we will then search for this file, search this value on the left side bar, and open the file.
 
 ![Open your page.json file and get main type name](https://img.yagisoftware.com/22-password-protect-page/6page_json.png)
+
+
+Open the "main-page.liquid" in the code editor (or another file name if it is different), and paste the following code at the top of the file : 
+
+```
+{% raw %}
+{% capture contentForQueryString %}{{ content_for_header }}{% endcapture %}
+  {% assign pageParams = contentForQueryString
+    | split: '"pageurl":"'
+    | last
+    | split: '"'
+    | first
+    | split: '.myshopify.com'
+    | last
+    | split: '?'
+    | last
+    | replace: '\/', '/'
+    | replace: '%20', ' '
+    | replace: '\u0026', '&'
+    | split: '&'
+  %}
+
+{% for param in pageParams %}
+  {% if param contains 'password=' %}
+  {% capture pagePassword %}{{ param | split: '=' | last }}{% endcapture %}
+  {% endif %}
+{% endfor %}
+{% endraw %}
+```
+
+![Paste the code on the top of main page template](https://img.yagisoftware.com/22-password-protect-page/7main_page_top.png)
+
+Next, search for {% raw %}{{ page.content }}{% endraw %} in the same file, and paste this line above it :
+```
+{% raw %}
+{% if page.metafields.custom.password == empty or page.metafields.custom.password == pagePassword %}
+{% endraw %}
+```
+![Add liquid code above content](https://img.yagisoftware.com/22-password-protect-page/8content_above.png)
+
+
+Next, paste this line below it :
+```
+{% raw %}
+{% else %}
+<p>
+  {% if pagePassword %}
+  {{ section.settings.wrong_password_prompt_text }}
+  {% else %}
+  {{ section.settings.password_prompt_text }}
+  {%  endif %}
+</p>
+<div class="field">
+  <input type="password" id="password-input" class="field__input" placeholder="Password" autofocus autocomplete="off" onkeypress="if(event.keyCode == 13){ window.location.href = '{{ request.path }}?password=' + this.value; }"/>
+  <br>
+  <button type="button" class="button" onclick="window.location.href = '{{ request.path }}?password=' + this.value;">{{ section.settings.submit_password_text }}</button>
+</div>
+{% endif %}
+{% endraw %}
+```
+![Add liquid code below content](https://img.yagisoftware.com/22-password-protect-page/8content_below.png)
+![Add settings code for the page section](https://img.yagisoftware.com/22-password-protect-page/9settings.png)
+![Navigate to the page in theme editor](https://img.yagisoftware.com/22-password-protect-page/10navigate_page.png)
+![Click the page section on left sidebar](https://img.yagisoftware.com/22-password-protect-page/11page_section.png)
+![Customize the text for the prompt](https://img.yagisoftware.com/22-password-protect-page/12customize.png)
