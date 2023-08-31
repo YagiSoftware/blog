@@ -52,6 +52,7 @@ Then search for "page.json" in the left side bar of the Theme code editor, and o
 
 ![Open your page.json file and get main type name](https://img.yagisoftware.com/22-password-protect-page/6page_json.png)
 
+(If your store theme does not have "page.json", then you can search for "page.liquid", and use it as a replacement for the "main-page.liquid" file for the steps below)
 
 Open the "main-page.liquid" in the code editor (or another file name if it is different), and paste the following code at the top of the file : 
 
