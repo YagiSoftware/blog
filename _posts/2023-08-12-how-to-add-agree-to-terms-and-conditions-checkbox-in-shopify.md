@@ -2,7 +2,7 @@
 layout: post
 title: How to add agree to terms and conditions checkbox in Shopify
 date: 2023-08-12 00:00 +0800
-description: In your Shopify Theme, click "Customize", navigate to "Cart" page, select the Subtotal section, Click "Add block", and select "Termsbox"...
+description: In this tutorial, you will learn to implement a "agree to terms and conditions" checkbox on your Shopify store.
 image: https://img.yagisoftware.com/19-terms-checkbox/cover.png
 ---
 
