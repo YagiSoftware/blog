@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to remove Express Checkout buttons in Shopify
+title: How to hide / remove Express Checkout buttons in Shopify
 date: 2023-08-14 15:20 +0800
 image: https://img.yagisoftware.com/20-hide-paypal-express/cover.png
 description: After saving the configuration, the Express Checkout methods on the top will be hidden, but customer can still select the “Paypal” method after they have input their shipping address and selected shipping option 
