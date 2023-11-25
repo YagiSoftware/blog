@@ -107,7 +107,7 @@ Next, search for {% raw %}{{ page.content }}{% endraw %} in the same file, and p
 <div class="field">
   <input type="password" id="password-input" class="field__input" placeholder="Password" autofocus autocomplete="off" onkeypress="if(event.keyCode == 13){ window.location.href = '{{ request.path }}?password=' + this.value; }"/>
   <br>
-  <button type="button" class="button" onclick="window.location.href = '{{ request.path }}?password=' + this.value;">{{ section.settings.submit_password_text }}</button>
+  <button type="button" class="button" onclick="window.location.href = '{{ request.path }}?password=' + document.querySelector('#password-input').value;">{{ section.settings.submit_password_text }}</button>
 </div>
 {% endif %}
 {% endraw %}
