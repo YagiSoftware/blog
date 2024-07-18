@@ -6,6 +6,11 @@ image: https://img.yagisoftware.com/22-password-protect-page/cover.png
 description: First, we will create a metafield definiton for pages, to store the password value. Go to your store settings, select "Custom Data" on the left side bar, and click "Pages"...
 ---
 
+## Updated Notes (18 July 2024)
+This tutorial is mainly for password protecting the page content, which does not include sections (like "Featured collection") added in the theme editor, if you would like to password protect sections as well, please send an email to me, I am happy to do it for a small fee.
+
+<br><br>
+
 You might have some content that you want to gate from public access, for example wholesale price list, or downloadable content for customers who have previously purchased certain product etc.
 
 There's way to create a new page template that only show content to logged in customer which have certain tags, but what if you want to allow visitor to view the content without creating an account / logging in?
