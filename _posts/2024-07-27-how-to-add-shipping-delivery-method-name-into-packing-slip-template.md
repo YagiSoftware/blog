@@ -31,7 +31,7 @@ In the template code, search for the line `<div class="shipping-address">` , the
 Next, search for the line `<div class="billing-address">` , then add this line below it
 {% raw %}
 ```liquid
-<h2 class=""></h2>
+<h2 class="">&nbsp;</h2>
 ```
 {% endraw %}
 
