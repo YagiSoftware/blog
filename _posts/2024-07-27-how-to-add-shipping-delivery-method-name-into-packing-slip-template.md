@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to add shipping method / delivery method name to packing slip in Shopify
+title: How to add shipping method to packing slip in Shopify
 date: 2024-07-27 14:45 +0800
 image: https://yagisoftware.s3.amazonaws.com/26-delivery-method-packing-slip/cover.png
 
