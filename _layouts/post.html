@@ -13,6 +13,9 @@ layout: default
   {{ content }}
 </div>
 
+{% if page.cta_code %}
+{{ page.cta_code }}
+{% else %}
 <div class="mx-auto max-w-3xl py-8 px-6" id="cta-box">
   <div class="w-full flex flex-wrap">
       <h2 class="font-semibold text-3xl md:text-4xl tracking-tight">Struggling with Abandoned Checkouts?</h2>
@@ -30,6 +33,7 @@ layout: default
   </div>
 
 </div>
+{% endif %}
 
 {% if page.id != 'index' and page.id !='about' and page.id !='tools' %}
 <section class="mt-12">
