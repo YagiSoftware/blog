@@ -15,9 +15,33 @@ With the tag, we can easily group new arrival products into collection by assign
 
 Fortunately, Shopify Flow app can help us automate the process of adding and removing tag for products!
 
-
+First, let's create a new collection to store the new arrival products. Select **Automated** for the collection type, and select the product must match **all conditions**, and set the condition to "Product tag" is equal to "new-arrival".
 
 ![Create a new collection](https://yagisoftware.s3.amazonaws.com/25-how-to-create-new-arrivals-collection/collection.png)
 
+Next, we can proceed to create the Flow automation for automating addition and removal of tags : 
 
 ![Flow detail](https://yagisoftware.s3.amazonaws.com/25-how-to-create-new-arrivals-collection/flow_detail.png)
+
+I have created the flow shown above, you can <a href="https://tea.ibex.sh/soulchild/flow-examples/raw/branch/master/Set%20new%20arrival%20tag.flow" download>download the flow file here</a> (right click > "Save as"), and import it into your store.
+
+Open the Shopify Flow app ("Flow") in your store admin, then click "Import", and select the file.
+
+![Import flow](https://yagisoftware.s3.amazonaws.com/25-how-to-create-new-arrivals-collection/import_flow.png)
+
+After importing, you should see a flow named "Set new arrival tag" in the list of flow, click on it, then click "Turn on workflow" :
+
+![Click into flow detail](https://yagisoftware.s3.amazonaws.com/25-how-to-create-new-arrivals-collection/flow_click.png)
+
+![Turn on flow](https://yagisoftware.s3.amazonaws.com/25-how-to-create-new-arrivals-collection/flow_turn_on.png)
+
+
+After turning on the flow, the automation will be active, you can test it out by creating a product in your Admin, and then you should see it appearing in the "New Arrival" collection within 1-2 minutes. The tag will also automatically be removed after 30 days, and the product will no longer appear in the collection afterwards.
+
+You can change the "Wait" time to shorter / longer to your liking (you can change it to a shorter period like 5 minutes if you want to test it out and confirm it works). To do this, click the "Edit" button on top, and click on the "Wait" action, and change the time period.
+
+![Flow edit](https://yagisoftware.s3.amazonaws.com/25-how-to-create-new-arrivals-collection/edit_flow.gif)
+
+
+
+
