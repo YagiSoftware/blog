@@ -13,7 +13,7 @@ cta_code: |
         <div style="margin: 1em auto; display: flex; align-content: center; justify-content: space-around; column-gap: 50px;">
           <img src="https://img.yagisoftware.com/flowfile.png" alt="abandoned checkout checklist and workaround tips" style="display: inline-block; width: 160px; filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));">
         </div>
-        <h3 class="text-gray-700 text-base lg:text-xl mt-4">You will also receive tips to improve your store experience, about once a week</h3>
+        <h3 class="text-gray-700 text-base lg:text-xl mt-4">You will also receive tips to improve your store's customer experience, about once a week</h3>
     </div>
   
     <div class="w-full text-center mx-auto">
