@@ -2,7 +2,7 @@
 layout: post
 title: How to create new arrivals collection in Shopify using Shopify Flow
 date: 2024-08-18 22:04 +0800
-image: https://yagisoftware.s3.amazonaws.com/24-how-to-change-shopify-checkout-flow-to-three-page-checkout/cover.png
+image: https://yagisoftware.s3.amazonaws.com/25-how-to-create-new-arrivals-collection/cover.png
 
 description: In the Shopify Flow app, create a trigger
 
