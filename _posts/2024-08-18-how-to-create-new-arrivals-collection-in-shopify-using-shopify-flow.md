@@ -4,7 +4,7 @@ title: How to create new arrivals collection in Shopify using Shopify Flow
 date: 2024-08-18 22:04 +0800
 image: https://yagisoftware.s3.amazonaws.com/25-how-to-create-new-arrivals-collection/cover.png
 
-description: In the Shopify Flow app, create a trigger
+description: Create a new collection to store the new arrival products, then we can proceed to create the Flow automation for automating addition and removal of tags
 
 cta_code: |
   <div class="mx-auto max-w-3xl py-8 px-6" id="cta-box">
