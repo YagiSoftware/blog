@@ -30,3 +30,8 @@ You can follow the video instruction below on how to add the "Save cart" and "Vi
 <div class="video-container">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B_qGPJnmTuY?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+<br>
+
+## Create POS Cart from Draft Order
+
