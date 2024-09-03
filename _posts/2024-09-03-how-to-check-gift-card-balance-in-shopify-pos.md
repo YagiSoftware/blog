@@ -2,6 +2,7 @@
 layout: post
 title: How to check gift card balance in Shopify POS
 date: 2024-09-03 15:47 +0800
+image: https://img.yagisoftware.com/28-check-giftcard-balance/cover.png
 
 description: Shopify POS has a global search icon, which you can tap and scan the QR code of the gift card (if the customer has it).
 ---
