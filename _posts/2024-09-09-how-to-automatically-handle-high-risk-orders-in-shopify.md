@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to automatically handle high risk orders in Shopify
+title: How to automatically handle high risk orders in Shopify with Flow
 date: 2024-09-09 16:49 +0800
 ---
 
@@ -13,3 +13,9 @@ For high risk order, Shopify usually will recommend you to cancel and refund the
 The problem with refunding transaction is that, [Shopify does not refund the transaction fee incurred for the order](https://community.shopify.com/c/shopify-discussions/transaction-credits-on-refunds-fees-after-march-1-2020-shopify/td-p/642688/page/3#:~:text=We%20won%27t%20be%20asking,that%20you%20agreed%20to%20already.), which means that if the high risk order is $200, you will still lose about $6 (approximately 3% of the order value) if you cancel and refund the order, these transaction fees could stack up and deducted in your future payout.
 
 To avoid incurring the transaction fee when an order is placed, you can change the payment capture from automatic to manual, which the customer's card will not be charged until you manually go into the order and click "Capture", or when you fulfill the order, you can [follow this article on how to change this settings](https://yagisoftware.com/articles/save-transaction-fees-from-order-refund-by-changing-payment-capture).
+
+The downside of manual payment capture is that you will have to remember to capture the payment in the future (before the authorization expires), and you will not get payout until if it is not captured, which can be crucial for pre-orders or on-demand products.
+
+Fortunately with Shopify Flow, we can setup an automation to check the order risk of a newly placed order, and proceed to capture the payment if it is not high risk, this way you don't have to worry about forgetting to capture a payment, and you don't have to worry about the loss of transaction fee while refunding a high risk order.
+
+This tutorial requires using Shopify Flow app on your store, you can install the [free Shopify Flow app (by Shopify) here](https://apps.shopify.com/flow) if you haven't already.
