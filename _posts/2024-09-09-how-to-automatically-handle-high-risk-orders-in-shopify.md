@@ -19,3 +19,22 @@ The downside of manual payment capture is that you will have to remember to capt
 Fortunately with Shopify Flow, we can setup an automation to check the order risk of a newly placed order, and proceed to capture the payment if it is not high risk, this way you don't have to worry about forgetting to capture a payment, and you don't have to worry about the loss of transaction fee while refunding a high risk order.
 
 This tutorial requires using Shopify Flow app on your store, you can install the [free Shopify Flow app (by Shopify) here](https://apps.shopify.com/flow) if you haven't already.
+
+## Turn off automatic payment capture
+
+Before we begin to use the Flow automation, make sure that the automatic payment capture is turned off in the Store Settings.
+
+1. Go to your Shopify store settings, then select "Payments"
+2. Then find the "Payment capture method" section, and click "Manage"
+![Store settings](https://img.yagisoftware.com/18-manual-payment-capture/1settings.png)
+
+3. You can select either "Automatically when order is fulfilled" or "Manually". Both options will authorize the customers payment method (which give your store permission to charge them later, but they are not charged when an order is placed).
+![Capture payment settings](https://img.yagisoftware.com/18-manual-payment-capture/2capture_option.png)
+
+<br><br>
+
+## Enable the Order Risk automation flow
+
+Next, you can [download the Shopify Flow file here](https://tea.ibex.sh/soulchild/flow-examples/raw/branch/master/Capture%20payment%20if%20order%20is%20not%20high%20fraud%20risk.flow) (right click > "Save as" / "Download Linked File As"), and import it into your store. The flow content is shown below : 
+
+![Auto capture for non-high risk flow](https://yagisoftware.s3.amazonaws.com/29-high-risk-orders/capture_flow.png)
