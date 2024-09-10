@@ -2,6 +2,9 @@
 layout: post
 title: How to automatically handle high risk orders in Shopify with Flow
 date: 2024-09-09 16:49 +0800
+image: https://img.yagisoftware.com/29-high-risk-orders/cover.png
+
+description: with Shopify Flow, we can setup an automation to check the order risk of a newly placed order, and proceed to capture the payment if it is not high risk, this way you don't have to worry about forgetting to capture a payment, and you don't have to worry about the loss of transaction fee while refunding a high risk order.
 ---
 
 Shopify has built-in fraud analysis which tells you if an order is high risk. A high risk order could meant that a stolen card was used for the payment, or the customer profile has abnormally high chargeback rate etc, these signals a high possibility that you may get hit with chargeback if you fulfill the order, which can cause significant financial losses.
