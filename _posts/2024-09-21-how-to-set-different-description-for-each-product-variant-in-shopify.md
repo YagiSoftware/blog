@@ -14,3 +14,8 @@ Wouldn't it be good if we can show different variant description when customer s
 
 First, we will create a metafield definiton for variants, to store the description unique for each variant.
 
+![Variant metafield](https://img.yagisoftware.com/30-variant-description/variant_metafield1.png)
+![Variant metafield](https://img.yagisoftware.com/30-variant-description/variant_metafield2.png)
+![Variant metafield](https://img.yagisoftware.com/30-variant-description/variant_metafield3.png)
+![Variant metafield](https://img.yagisoftware.com/30-variant-description/variant_metafield4.png)
+![Variant metafield](https://img.yagisoftware.com/30-variant-description/variant_metafield5.png)
