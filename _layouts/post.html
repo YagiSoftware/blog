@@ -16,6 +16,7 @@ layout: default
 {% if page.cta_code %}
 {{ page.cta_code }}
 {% else %}
+{% comment %}
 <div class="mx-auto max-w-3xl py-8 px-6" id="cta-box" style="margin-top:4em;">
   <div class="w-full flex flex-wrap">
       <h2 class="font-semibold text-3xl md:text-4xl tracking-tight">Struggling with Abandoned Checkouts?</h2>
@@ -32,6 +33,18 @@ layout: default
     <p class="text-gray-700 text-sm">We respect your privacy, unsubscribe any time</p>
   </div>
 
+</div>
+{% endcomment %}
+
+<div class="mx-auto max-w-3xl py-8 px-6" id="cta-box">
+  <div class="w-full flex flex-wrap">
+      <h2 class="font-semibold text-3xl md:text-3xl tracking-tight">Customize your Shopify store without coding knowledge, and gain happy customers</h2>
+      <h3 class="text-gray-700 text-base lg:text-lg mt-2">I will send practical tutorials and guide which you can follow without coding experience, about once a week</h3>
+  </div>
+  <div class="w-full text-center mt-4 mx-auto">
+    <script async data-uid="0d03b9c5a5" src="https://yagisoft.ck.page/0d03b9c5a5/index.js"></script>
+    <p class="text-gray-700 text-sm">We respect your privacy, unsubscribe any time</p>
+  </div>
 </div>
 {% endif %}
 
