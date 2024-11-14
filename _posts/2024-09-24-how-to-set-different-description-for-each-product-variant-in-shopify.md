@@ -49,6 +49,10 @@ Next, click into the "Custom Liquid" block,
 
 ![Click into custom liquid](https://img.yagisoftware.com/30-variant-description/click_custom_liquid.png)
 
+
+(Thank you Alex for the code for observing URL parameter changes for variantID !)
+
+
 And add this code : 
 
 {% raw %}
@@ -91,7 +95,24 @@ function yagiVariantChanged() {
     yagiHideAllVariantDescriptionExcept(variantId);
   }
 }
+
+// Set up observer for changes
+const observer = new MutationObserver((mutations) => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const variantId = urlParams.get('variant');
+  if(variantId) {
+    yagiHideAllVariantDescriptionExcept(variantId);
+  }
+});
+
+observer.observe(document.body, {
+  subtree: true,
+  childList: true
+});
+
 </script>
+
+
 ```
 {% endraw %}
 
