@@ -138,6 +138,15 @@ footer {
   @apply mb-10;
 }
 
+#post-content ol, #post-content ul {
+  padding-left: 2rem;
+  margin-bottom: 3rem;
+}
+
+#post-content ol li, #post-content ul li {
+  margin-bottom: 1rem;
+}
+
 #post-content h1 {
   @apply font-bold text-4xl lg:text-5xl text-gray-700 mt-2 mb-4;
 }
