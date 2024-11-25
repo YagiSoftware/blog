@@ -8,7 +8,7 @@ Shopify allows Automatic Fulfillment, which will automatic fulfill an order when
 
 This is handy, until one of the scenarios below occurs:
 
-1. Customer wants to make changes to their order details, such as shipping address
+1. [Customer wants to make changes to their order details, such as shipping address](https://yagisoftware.com/articles/how-to-let-customer-update-order-shipping-address-on-your-shopify-store)
 2. Customer agrees to a post purchase upsell, and the additional line items need to be added to the order
 3. Some other apps need to modify the order right after it is placed to add additional information
 
@@ -25,8 +25,13 @@ This tutorial requires using Shopify Flow app on your store, you can install the
 
 Next, you can [download the Shopify Flow file here](https://tea.ibex.sh/soulchild/flow-examples/raw/branch/master/Delay_Send_Fulfillment.flow) (right click > "Save as" / "Download Linked File As"), and import it into your store. The flow content is shown below : 
 
-![Wait and fulfill order flow](https://img.yagisoftware.com/31-delay-automatic-fulfillment/4_wait_duration.png)
+![Wait and fulfill order flow](https://img.yagisoftware.com/31-delay-automatic-fulfillment/3_flow.png)
 
 Open the Shopify Flow app ("Flow") in your store admin, then click "Import", and select the file.
 
 ![Import flow](https://img.yagisoftware.com/25-how-to-create-new-arrivals-collection/import_flow.png)
+
+
+If you would like to change the wait duration, you can click on "Edit", select the "Wait" step, and change the duration : 
+
+![Change the wait duration](https://img.yagisoftware.com/31-delay-automatic-fulfillment/4_wait_duration.png)
