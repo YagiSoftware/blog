@@ -13,9 +13,16 @@ If you would like to redirect customer to a different page after login, you can 
 `https://your-store.myshopify.com/customer_authentication/login?return_to=<the_page_to_redrect_to_after_login>`
 
 
-If you are using official Shopify themes like Dawn, this link is located in the `sections/header.liquid` file. In the file, search for "**{% raw %}{{ routes.account_login_url }}{% endraw %}**" , and change it to the format shown above, or you can refer the examples below.
+If you are using official Shopify themes like Dawn, this link is located in the `sections/header.liquid`  and `snippets/header-drawer.liquid` files. In the file, search for "**{% raw %}{{ routes.account_login_url }}{% endraw %}**" , and change it to the format shown above, or you can refer the examples below.
 
+
+For "sections/header.liquid" file : 
 ![Locate login link](https://img.yagisoftware.com/32-redirect-customer-login/1_routes.png)
+
+
+For "snippets/header-drawer.liquid" file :
+![Locate login link](https://img.yagisoftware.com/32-redirect-customer-login/1a_routes_mobile.png)
+
 
 Some third party or older themes might use "/account/login" as the login link in the theme code, you can search for this too.
 
