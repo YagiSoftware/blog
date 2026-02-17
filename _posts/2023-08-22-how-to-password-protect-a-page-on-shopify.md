@@ -31,7 +31,7 @@ Before we begin the tutorial, it would be best to [make a backup of your theme](
 
 ## Create metafield definition for page to store the password
 
-First, we will create a metafield definiton for pages, to store the password value. Go to your store settings, select "Custom Data" on the left side bar, and click "Pages":
+First, we will create a metafield definiton for pages, to store the password value. Go to your store settings, select "Metafields and metaobjects" on the left side bar, and click "Pages":
 ![Create custom data metafield definition for Pages](https://img.yagisoftware.com/22-password-protect-page/1custom_data.png)
 
 Then click "Add definiton":
