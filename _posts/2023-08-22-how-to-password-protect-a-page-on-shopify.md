@@ -7,7 +7,7 @@ description: First, we will create a metafield definiton for pages, to store the
 ---
 
 ## Updated Notes (18 July 2024)
-This tutorial is mainly for password protecting the page content, which does not include sections (like "Featured collection") added in the theme editor, if you would like to password protect sections as well, please send an email to me, I am happy to do it for a small fee.
+This tutorial is mainly for password protecting the page content (that is editable on the Shopify Admin > Pages), which does not include sections (like "Featured collection", "Collection list" etc) added in the theme editor, if you would like to password protect sections as well, you can refer to this [paid guide - how to password protected pages with sections](https://axelkee.gumroad.com/l/passwordprotectpage)
 
 <br><br>
 
@@ -167,3 +167,6 @@ You can set password on other pages by setting the metafield (custom.password) v
 
 In the password metafield section, type in your desired password value (visitor will need to input this password value to view the page content) : 
 ![Input your desired password for the password metafield](https://img.yagisoftware.com/22-password-protect-page/5page_set_password.png)
+
+
+This tutorial is mainly for password protecting the page content (that is editable on the Shopify Admin > Pages), which does not include sections (like "Featured collection", "Collection list" etc) added in the theme editor, if you would like to password protect sections as well, you can refer to this [paid guide - how to password protected pages with sections](https://axelkee.gumroad.com/l/passwordprotectpage)
