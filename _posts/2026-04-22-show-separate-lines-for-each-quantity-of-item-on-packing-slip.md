@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Show separate lines for each quantity of item on packing slip
+description: First, go to your store settings, and select Shipping and delivery, Next, scroll down and select Packing slip template 
 date: 2026-04-22 17:38 +0800
+image: https://img.yagisoftware.com/33-separate-line-items-packing-slip/cover.png
 ---
 
 Sometimes packing mistake can happen, especially for a line item that contains multiple quantity, packers might mistakenly pick only 1 quantity for a line item (as typically one item usually only has one quantity). This would cause customer dissatisfaction, when customers found out they have received less quantity than they have ordered, and you would have to arrange additional shipment to ship the missed quantities.
