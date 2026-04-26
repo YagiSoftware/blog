@@ -50,7 +50,7 @@ Click "Save", then go to your orders page, choose an order and click "Print" > "
 ![Print packing slip](https://img.yagisoftware.com/33-separate-line-items-packing-slip/print_slip.png)
 
 <!-- offer fully edited code to purchase -->
-
+<!--
 If you are not confident with the code modification, and prefer to just copy paste the updated packing slip template code and replace, you can purchase the (copy-pastable) updated packing slip template code here: [https://axelkee.gumroad.com/l/packing-slip-separate-line-items](https://axelkee.gumroad.com/l/packing-slip-separate-line-items)
-
+-->
 
