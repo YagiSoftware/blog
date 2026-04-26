@@ -45,6 +45,12 @@ Finally,  insert an additional `{% raw %}{% endfor %}{% endraw %}` , right above
 
 Click "Save", then go to your orders page, choose an order and click "Print" > "Print Packing slips", and you should see the updated packing slip template.
 
+(If anything goes wrong, you can click the "Revert to default" button beside the "Save" button located at bottom, to revert back to the default packing slip code)
+
 ![Print packing slip](https://img.yagisoftware.com/33-separate-line-items-packing-slip/print_slip.png)
 
 <!-- offer fully edited code to purchase -->
+
+If you are not confident with the code modification, and prefer to just copy paste the updated packing slip template code and replace, you can purchase the (copy-pastable) updated packing slip template code here: [https://axelkee.gumroad.com/l/packing-slip-separate-line-items](https://axelkee.gumroad.com/l/packing-slip-separate-line-items)
+
+
