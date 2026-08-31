@@ -31,5 +31,4 @@ Are you paying extra money on transaction fees to Shopify? Would you save more m
 
 <img src="{{ site.baseurl }}/affi.jpeg">
 
-Affilitrak Affiliate Marketing
 Did you know there's a free affiliate app that has all the features of the paid apps? If you've thought about starting an affiliate program, <a href="https://affilitrak.com" target="_blank">Affilitrak</a> can handle all the tracking and management for you.
