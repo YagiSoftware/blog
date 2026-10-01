@@ -3,6 +3,7 @@ layout: post
 title: How to hide Sidekick in Shopify Admin
 description: In the custom CSS google chrome extension, input the following code
 date: 2026-10-01 15:57 +0800
+image: https://img.yagisoftware.com/35-how-to-hide-sidekick/cover.png
 ---
 
 
